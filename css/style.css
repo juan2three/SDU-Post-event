@@ -1,0 +1,479 @@
+/*
+    Juan Perez
+    SunDance USA
+    10/24/2016
+*/
+
+body{
+	 overflow-x: hidden;
+}
+html{
+	overflow-x: hidden;
+}
+.teal{
+	background-color: #4cc1b0;
+	padding: 5px 0px 5px 0px;
+	width: 41.66666667%;
+	float: left;
+}
+.yellow{
+	background-color: #ffe716;
+	padding: 5px 0px 5px 0px;
+	width: 16.66666667%;
+	float: left;
+}
+.green{
+	background-color: #6ebe44;
+	padding: 5px 0px 5px 0px;
+	width: 41.66666667%;
+	float: left;
+}
+@font-face {
+  font-family: 'Bebasneue-book';
+  src:  url('http://uploads.sundancegraphics.com/~prepress/SDU-Post-event/fonts/BebasNeue-Book.woff') format('woff');
+}
+@font-face {
+  font-family: 'gotham-book';
+  src:  url('https://s3-us-west-2.amazonaws.com/uploadingfont/gotham-book.ttf') format('true-type');
+}
+@font-face {
+  font-family: 'myriad-pro';
+  src:  url('http://sundancesdu.com/LWC_00817/uploadImages/font/Myriad-Pro.jpg') format('true-type');
+}
+@font-face {
+  font-family: 'gotham-black';
+  src:  url('http://uploads.sundancegraphics.com/~prepress/SDU-Post-event/fonts/gotham-black.woff') format('woff');
+}
+.title{
+	color: #FFF;
+    font-size: 30pt;
+    vertical-align: text-top;
+    line-height: 46px;
+}
+
+.move {
+    margin-right: -85px;
+}
+.padding{
+	padding-right: 15px;
+}
+
+.grey-box{
+	background-color: #6f7073;
+	padding: 7% 10% 7% 10%;
+	color: #FFF;
+	font-family: 'gotham-book';
+	text-align: left;
+	font-size: .78vw;
+	line-height: 161%;
+}
+.teal-box2{
+	background-color: #4cc1b0;
+	padding:3.9% 20% 29px 20%;
+	color: #FFF;
+	font-family: 'gotham-book';
+	text-align: left;
+	font-size: .78vw;
+	margin-top: 1%;
+	text-align: center;
+}
+.wrap{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+}
+
+.sub-title{
+	padding: 20px;
+    text-align: center;
+    font-size: 1vw;
+
+}
+.col.col-span-6.right {
+    margin-left: 0px;
+    padding-top: 5px;
+}
+.bottom-pad{
+	margin-bottom: 1%;
+}
+.black{
+	color: #f4a01a;
+	font-style: none;
+	font-family: 'gotham-black';
+
+
+}
+}
+@media (max-width: 992px){
+	.move{
+	    margin-right: -5px;
+	}
+}
+
+
+.row1 {
+  display: -webkit-box;
+  display:    -moz-box;
+  display:     -ms-box;
+  display:         box;
+  -webkit-box-lines: multiple;
+     -moz-box-lines: multiple;
+      -ms-box-lines: multiple;
+          box-lines: multiple;
+  /* */
+  width: 100%;
+}
+
+.col {
+  -webkit-box-flex: 1;
+     -moz-box-flex: 1;
+      -ms-box-flex: 1;
+          box-flex: 1;
+  /* */
+  width: 6.6666%;
+  margin: 0 0.8333% 0.5rem 0.8333%;
+  padding: 0.5em 0;
+  vertical-align: top;
+}
+
+/* nested grids */
+.row .row, .row.nested {
+  
+}
+
+/* full width grids */
+.row.wide-fit {
+  margin-left: -0.8333%;
+  margin-right: -0.8333%;
+}
+
+/* center grids */
+.row.center {
+  -webkit-box-pack: center;
+     -moz-box-pack: center;
+      -ms-box-pack: center;
+          box-pack: center;
+}
+
+.center .col {
+  -webkit-box-flex: 1;
+     -moz-box-flex: 1;
+      -ms-box-flex: 1;
+          box-flex: 1;
+}
+
+/* columns widths */
+
+.col-span-1 {
+	/* ((1.6666 * 4) * 1)  */
+	width: 6.6666%;
+}
+
+.col-span-2 {
+	/* ((1.6666 * 4) * 2) + (0.8333 * 2) */
+	width: 14.9994%; 
+}
+
+.col-span-3 {
+	/* ((1.6666 * 4) * 3) + (0.8333 * 2) * 2) */
+	width: 23.3324%;
+}
+
+.col-span-4 {
+	/* ((1.6666 * 4) * 4) + (0.8333 * 2) * 3) */
+	width: 31.6654%;
+}
+
+.col-span-5 {
+	/* ((1.6666 * 4) * 5) + (0.8333 * 2) * 4) */
+	width: 39.9984%;
+}
+
+.col-span-6 {
+	/* ((1.6666 * 4) * 6) + (0.8333 * 2) * 5) */
+	width: 48.3314%;
+	margin-right: 0px;
+}
+
+.col-span-7 {
+	/* ((1.6666 * 4) * 7) + (0.8333 * 2) * 6) */
+	width: 56.6644%;
+}
+
+.col-span-8 {
+	/* ((1.6666 * 4) * 8) + (0.8333 * 2) * 7) */
+	width: 64.9974%;
+	margin-right: 0px;
+}
+
+.col-span-9 {
+	/* ((1.6666 * 4) * 9) + (0.8333 * 2) * 8) */
+	width: 73.3304%;
+}
+
+.col-span-10 {
+	/* ((1.6666 * 4) * 10) + (0.8333 * 2) * 9) */
+	width: 81.6634%;
+}
+
+.col-span-11 {
+	/* ((1.6666 * 4) * 11) + (0.8333 * 2) * 10) */
+	width: 89.9964%;
+}
+
+.col-span-12 {
+	/* ((1.6666 * 4) * 12) + (0.8333 * 2) * 11) */
+	width: 98.3294%;
+}
+
+/* examples */
+
+.fixed-width {
+  -webkit-box-flex: 0;
+     -moz-box-flex: 0;
+      -ms-box-flex: 0;
+          box-flex: 0;
+  /* */
+	width: 500px;
+	background-color: rgba(255,0,0,0.1) !important;
+}
+
+@media all and (max-width: 568px) {
+	.col-span-1,
+	.col-span-2,
+	.col-span-3,
+	.col-span-4,
+	.col-span-5 {
+		width: 48.3314%;
+	}
+	
+	.col-span-6,
+	.col-span-7,
+	.col-span-8,
+	.col-span-9,
+	.col-span-10,
+	.col-span-11 {
+		width: 98.3294%;
+	}
+	
+	.nested .col {
+		width: 98.3294%;
+	}
+}
+
+.sappi{
+	background-image: url("http://uploads.sundancegraphics.com/~prepress/SDU-Post-event//images/sappi.png");
+	background-size: cover;
+}
+.dogs{
+	background-image: url("http://uploads.sundancegraphics.com/~prepress/SDU-Post-event//images/dogs.png");
+	background-size: cover;
+	height: 23%;
+}
+.dogs-mobile{
+		background-image: url("http://uploads.sundancegraphics.com/~prepress/SDU-Post-event//images/dogs.png");
+	background-size: cover;
+	height: 23%;
+}
+.sappi-mobile{
+		background-image: url("http://uploads.sundancegraphics.com/~prepress/SDU-Post-event//images/sappi.png");
+	background-size: cover;
+	height: 23%;
+}
+.quote1{
+	height: 23%;
+	background-color: #4cc1b0;
+	color: #FFF;
+    font-family: 'gotham-book';
+    font-style: italic;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+.quote2{
+	height: 23%;
+	background-color: #6ebe44;
+	color: #FFF;
+    font-family: 'myriad-pro';
+    font-style: italic;
+    text-align: center;
+    padding: 7% 5%;
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.quote1-mobile{
+	height: 35%;
+	background-color: #4cc1b0;
+	color: #FFF;
+    font-family: 'gotham-book';
+    font-style: italic;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+.quote2-mobile{
+	background-color: #6ebe44;
+	color: #FFF;
+    font-family: 'gotham-book';
+    font-style: italic;
+    text-align: center;
+    padding: 25px;
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.chairs{
+	background-image: url("http://uploads.sundancegraphics.com/~prepress/SDU-Post-event//images/chairs.png");
+	background-size: cover;
+	height: 23%;
+	
+}
+.speaker{
+	background-image: url("http://uploads.sundancegraphics.com/~prepress/SDU-Post-event//images/speaker.png");
+	background-size: cover;
+	height: 23%;
+}
+
+.grey-box{
+	background-color: #6f7073;
+	padding: 12% 13% 12% 13%;
+	color: #FFF;
+	font-family: 'gotham-book';
+	text-align: left;
+
+	height: 49.9%;
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.teal-box{
+	background-color: #4cc1b0;
+	color: #FFF;
+	font-family: 'gotham-book';
+	text-align: center;
+	font-size: 100%;
+	height: 20%;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.teal-box-mobile{
+	background-color: #4cc1b0;
+	color: #FFF;
+	font-family: 'gotham-book';
+	text-align: center;
+	font-size: 100%;
+	padding: 30px;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.grey-box-mobile{
+	background-color: #6f7073;
+	color: #FFF;
+	font-family: 'gotham-book';
+	text-align: center;
+	font-size: 100%;
+	padding: 60px;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footie{
+    margin-top: 40px;
+    color: #999999;
+}
+#test {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+#test2 {
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+#test3 {
+    animation: fadein 4s;
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+    -o-animation: fadein 4s; /* Opera */
+}
+#test4 {
+    animation: fadein 5s;
+    -moz-animation: fadein 5s; /* Firefox */
+    -webkit-animation: fadein 5s; /* Safari and Chrome */
+    -o-animation: fadein 5s; /* Opera */
+}
+#test5 {
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+#test6 {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+    transition-duration: 5s;
+}
+#test7 {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+#test8 {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
